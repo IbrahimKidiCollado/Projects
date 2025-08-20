@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  
+  <header class="containerTarjetas">
+    <div class="tarjetaGris">
+      <div class="tarjetaGris-item"> 
+        <p id="tarjetaCVC">000</p>
+      </div>
+    </div>
+    <div class="tarjetaMorada">
+      <div class="tarjetaMorada-item">
+        <p id="puntoBlanco"></p>
+        <p id="puntoTransparente"></p>
+        <p id="numeroTarjeta">0000 0000 0000 0000</p>
+        <p id="nombreTarjeta">JANE APPLESEED</p>
+        <p id="fechaTarjeta">00/00</p>
+      </div>
+    </div>
+  </header>
+  <main class="containerDatos">
+    <form class="form">
+      <div id="form" class="containerForm">
+        <label for="Name">CARDHOLDER NAME</label>
+        <input type="text" name="Name" id="Name" placeholder="e.g Jane Appleseed" class="inputTexto color">
+        <label for="Number">CARD NUMBER</label>
+        <input type="text" name="Number" id="number" maxlength="16" placeholder="e.g 1234 5678 9123 0000" class="inputTexto color">
+          <div class="date">
+            <label for="date" class="labelDate">EXP. DATE (MM/YY)</label>
+            <label for="CVC" class="labelUltimo">CVC</label>
+          </div>
+          <div class="containerCVC">
+            <input type="text" name="date" id="date1" class="date1-2 color" maxlength="2" placeholder="MM">
+            <input type="text" name="date" id="date2" class="date1-2 color" maxlength="2" placeholder="YY">
+            <input type="text" name="CVC" id="cvc" class="cvc color" maxlength="3" placeholder="e.g 123">
+          </div>
+        
+      </div>
+      <button type="button" class="botonConfirmar" onclick="todos()" id="confirmar">Confirm</button>
+    </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
