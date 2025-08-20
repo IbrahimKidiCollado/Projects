@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Aquí se encuentra enlazada la hoja de estilos, si se le cambia el nombre o se cambia por otra
+    solamente habría que poner el nuevo nombre en href-->
+    <link rel="stylesheet" href="style.css">
+    <!--Aqui añadimos el icono a la página web-->
+    <link rel="icon" type="image/x-icon" href="imgs/logos/logo.png">
+    <!--Si se quiere cambiar el nombre de la pagina que es lo que aparece escrito en la pestaña del navegador-->
+    <title>HOME</title>
+</head>
+<!--Aqui tenemos el body que es donde se encuentra todo el codigo HTML-->
+
+<body>
+    <!--Script que tiene que estar en la web para que se pueda utilizar el mismo footer en todas las páginas sin tenerlo como código en cada una-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+            $("#contenidoFooter").load("footer.html");
+        });
+    </script>
+    <!--Esto es la cabecera, lo que aparece arriba del todo de la página-->
+    <header style="background-image: url(imgs/header/fondo.jpg);">
+        <nav class="contenedor-header">
+            <!--Si desea cambiar el logo de la empresa solamente tendría que escribir la ruta pertinente en "SRC"-->
+            <!--The image used here come from: -->
+            <a href="index.html"><img class="logo" src="imgs/logos/logo.png"></a>
+            <!--Aqui tenemos el menu de navegacion de la web, si desea añadir alguno o quitarlo, solo debe copiar uno,
+            pegarlo abajo de ese y cambiarle el nombre y añadirle la ruta a esa web-->
+            <div class="menu">
+                <ul class="links">
+                    <a href="index.html">
+                        <p class="enlaces">Inicio</p>
+                    </a>
+                    <a href="webForos.html">
+                        <pre style="font-size: 190%; color: aliceblue; font-family: Calibri, sans-serif;">Foros</pre>
+                    </a>
+                    <a href="webEventos.html">
+                        <p class="enlaces">Eventos</p>
+                    </a>
+                    <a href="webTeam.html">
+                        <p class="enlaces">Equipo</p>
+                    </a>
+                    <a href="webContact.html">
+                        <p class="enlaces">Contacto</p>
+                    </a>
+                </ul>
+            </div>
+            <!--Finaliza el menu de navegación de la web-->
+        </nav>
+        <!--Esto es un separador de secciones, lo verás entre medias de cada sección, sirve para separar las secciones,
+        a parte de tener un tamaño asignado así en la web se podrá observar una separacion entre secciones.-->
+        <div class="separador"></div>
+        <!--Aqui tenemos la introducción de la web-->
+        <section class="introduccion">
+            <div class="contenedor-texto">
+                <!--Si desea cambiar el titulo de introducción solamente tendría que modificar este <h1>-->
+                <h1 class="titulo">EMOCIONA-T</h1>
+                <!--Si desea cambiar el parrafo de introducción solamente tendría que modificar este <p>-->
+                <p class="texto">
+                    Les presentamos un sistema de ayuda dirigido a la salud mental
+                    desarrollado por la empresa “Gestiona tus emociones” en colaboración
+                    con profesionales de la salud.
+                </p>
+            </div>
+        </section>
+        <!--Esto es un separador de secciones, lo verás entre medias de cada sección, sirve para separar las secciones,
+        a parte de tener un tamaño asignado así en la web se podrá observar una separacion entre secciones.-->
+        <div class="separador"></div>
+    </header>
+    <!--  Aqui finaliza la cabecera de la web-->
+    <!--Eso significa que ya empezamos con su contenido, es decir, su cuerpo-->
+    <main>
+        <!--Aqui tenemos la primera sección de la web, 2 imagenes almacenadas en un contenedor -->
+        <section class="contenedor-imagenes-inicio">
+            <!--Aquí está el contenedor de la primera imagen-->
+            <div>
+                <div id="div-posicion-relativa">
+                    <!--Si desea cambiar la imagen coloquela aquí-->
+                    <!--The image used here come from: https://www.flickr.com/photos/92862117@N00/2596827858 -->
+                    <img id="imagen1_1" src="imgs/inicio/seccion1/Imagen1_1.jpg" alt="">
+                    <!--Aqui el texto que se encuentra por encima de ella-->
+                    <div id="div-posicion-absoluta">
+                        <p>Tu opinión nos importa, Y MUCHO.</p>
+                    </div>
+                </div>
+            </div>
+            <!--Aqui tenemos el contenedor de la segunda imagen-->
+            <div>
+                <div id="div-posicion-relativa">
+                    <!--Si desea cambiar la imagen coloquela aquí-->
+                    <!--The image used here come from: https://www.flickr.com/photos/92334668@N07/11368395403 -->
+                    <img id="imagen1_2" src="imgs/inicio/seccion1/Imagen1_2.jpg" alt="">
+                    <!--Aqui el texto que se encuentra por encima de ella-->
+                    <div id="div-posicion-absoluta">
+                        <p>Tu opinión nos importa, Y MUCHO.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Aqui acaba la seccion 1 de la web-->
+        <!--Separador para separar secciones :)-->
+        <div class="separador"></div>
+        <!--Comienza la sección 2 de la web-->
+        <section class="contenedor-texto2 animacion">
+            <!--Si desea cambiar el titulo de la seccion solamente tendría que modificar este <h2>-->
+            <h2 class="subtitulo">Emociona-t</h2>
+            <!--Si desea cambiar el subtitulo de la seccion solamente tendría que modificar este <h1>-->
+            <h1 class="titulo">La soledad no es buena compañera</h1>
+            <!--Si desea cambiar el parrafo de la sección solamente tendría que modificar este <p>-->
+            <p class="texto">
+                Muchas veces creeras que estas solo o que no tienes con quien
+                hablar, ¡Y ESO NO ES VERDAD!. <br>
+                Hay un monton de gente dispuesta a ayudarte, estén o no estén lejos.
+                Nosotros te ayudaremos a contactarlas para que puedas tener compañia en
+                momentos en los que la necesites.
+            </p>
+        </section>
+        <!--Finaliza la segunda sección de la web-->
+        <!--Separador para separar secciones :)-->
+        <div class="separador"></div>
+        <!--Comienza la seccion 3 de la web -->
+        <section class="contenedor-seccion3" style="background-image: url(imgs/header/fondo.jpg);">
+            <div class="separador"></div>
+            <!--Aqui se almacena la primera parte del texto de la seccion 3-->
+            <div class="contenedor-texto">
+                <!--Si desea cambiar el titulo de la seccion solamente tendría que modificar este <h3>-->
+                <h1 class="titulo">Emociona-t</h1>
+                <!--Si desea cambiar el parrafo de la seccion solamente tendría que modificar este <p>-->
+                <p class="texto">
+                    ¿Porque debe usar nuestros servicios?
+                </p>
+            </div>
+            <!--Aqui tenemos la segunda parte del texto de la sección 3-->
+            <div class="contenedor-columnas-texto-seccion3 animacion">
+                <!--Primera fila los textos de esta seccion-->
+                <div class="fila-columnas-texto-seccion3">
+                    <!--Primer texto de la primera fila de la seccion 3-->
+                    <div class="contenedor-texto-columnas">
+                        <!--Si desea cambiar el titulo del primer texto de la primera fila solamente tendría que modificar este <h3>-->
+                        <h3 class="titulo-columnas">Dedicacion</h3>
+                        <!--Si desea cambiar el texto del primer texto de la primera fila solamente tendría que modificar este <p>-->
+                        <p class="texto-columnas">
+                            En nuestra compañia estamos dedicados integramente a
+                            nuestros clientes y en la ayuda que necesitan.
+                            Estamos 24 horas disponibles por si necesitarais nuestra ayuda
+                        </p>
+                    </div>
+                    <!--Segundo texto de la primera fila de la seccion 3-->
+                    <div class="contenedor-texto-columnas">
+                        <!--Si desea cambiar el titulo del segundo texto de la primera fila solamente tendría que modificar este <h3>-->
+                        <h3 class="titulo-columnas">Esfuerzo</h3>
+                        <!--Si desea cambiar el texto del segundo texto de la primera fila solamente tendría que modificar este <p>-->
+                        <p class="texto-columnas">
+                            Creemos que aunque sea minimo todo esfuerzo es totalmente valido
+                            y util.
+                            Por eso, por mas minimo que te parezca a ti el paso, para nosotros
+                            es un paso colosal que puede determinar tu recuperación.
+                        </p>
+                    </div>
+                </div>
+                <!--Termina la primera fila de textos de la seccion 3 -->
+                <!--Segunda fila los textos de esta seccion-->
+                <div class="fila-columnas-texto-seccion3">
+                    <!--Primer texto de la segunda fila de la seccion 3-->
+                    <div class="contenedor-texto-columnas">
+                        <!--Si desea cambiar el titulo del primer texto de la segunda fila solamente tendría que modificar este <h3>-->
+                        <h3 class="titulo-columnas">Constancia</h3>
+                        <!--Si desea cambiar el texto del primer texto de la segunda fila solamente tendría que modificar este <p>-->
+                        <p class="texto-columnas">
+                            En nuestra empresa confiamos en la constancia del trabajo,
+                            así que no crea que se va a quedar a media recuperación, por que eso no es verdad.
+                            Nosotros os ayudaremos a una recuperación total y sana.
+                        </p>
+                    </div>
+                    <!--Segundo texto de la segunda fila de la seccion 3-->
+                    <div class="contenedor-texto-columnas">
+                        <!--Si desea cambiar el titulo del segundo texto de la segunda fila solamente tendría que modificar este <h3>-->
+                        <h3 class="titulo-columnas">Preparación</h3>
+                        <!--Si desea cambiar el texto del segundo texto de la segunda fila solamente tendría que modificar este <p>-->
+                        <p class="texto-columnas">
+                            Nuestra empresa está llena de profesionales totalmente capacitados para tu cuidado.
+                            Son los mejores en su campo, y seguramente sean los mejores que puedas encontrarte.
+                        </p>
+                    </div>
+                </div>
+                <!--Aqui finaliza la segunda fila de textos de la seccion 3-->
+            </div>
+            <!--separador :)-->
+            <div class="separador"></div>
+        </section>
+        <!--Aqui finaliza la seccion 3-->
+        <!--Comienza la seccion 4 de la web de inicio-->
+        <section class="contenedor-seccion4">
+            <!--Contenedor de la primera imagen de la seccion 4-->
+            <div class="contenedor-imagenes-inicio2">
+                <div id="div-posicion-relativa">
+                    <!--Si desea cambiar la imagen solo ponga su url en "src"-->
+                    <!--The image used here come from: https://openverse.org/image/22c7f1f5-aac3-4f3b-9bc9-edc363b3a1b4?q=edificios%20azules -->
+                    <img id="imagen2_1" src="imgs/inicio/seccion4/Imagen2_1.jpg" alt="">
+                    <!--Texto que va por encima de la imagen-->
+                    <div id="div-posicion-absoluta">
+                        <p>Tu opinión nos importa, Y MUCHO.</p>
+                    </div>
+                </div>
+            </div>
+            <!--Termina contenedor de la primera imagen de la seccion 4-->
+            <!--Contenedor de la segundaa imagen de la seccion 4-->
+            <div class="contenedor-imagenes-inicio2">
+                <div id="div-posicion-relativa">
+                    <!--Si desea cambiar la imagen solo ponga su url en "src"-->
+                    <!--The image used here come from: https://openverse.org/image/ea834c0c-4f2b-41c0-8c73-8cc00b56e3ba?q=edificios%20azules -->
+                    <img id="imagen2_2" src="imgs/inicio/seccion4/Imagen2_2.jpg" alt="">
+                    <div id="div-posicion-absoluta">
+                        <!--Texto que va por encima de la imagen-->
+                        <p>Tu opinión nos importa, Y MUCHO.</p>
+                    </div>
+                </div>
+            </div>
+            <!--Termina el contenedor de la segunda imagen de la seccion 5-->
+        </section>
+        <!--Finaliza la seccón 4-->
+        <!--Separador :)-->
+        <div class="separador"></div>
+
+        <!--Comienza la seccion 5 de la web de  inicio-->
+        <section class="contenedor-seccion5">
+            <!--Contenedor del texto de la seccion 5 -->
+            <div class="contenedor-texto2">
+                <!--Si desea cambiar el titulo de la seccion solamente tendría que modificar este <h2>-->
+                <h2 class=" subtitulo animacion">Emociona-t</h2>
+                <!--Si desea cambiar el subtitulo de la seccion solamente tendría que modificar este <h1>-->
+                <h1 class=" titulo animacion">Por si todavia estás indeciso</h1>
+                <!--Si desea cambiar el texto de la seccion solamente tendría que modificar este <p>-->
+                <p class="texto">
+
+                </p>
+            </div>
+            <!--Termina el contenedor del texto de la seccion 5 -->
+            <!--Comienza un contenedor de iconos con texto de la seccion 5-->
+            <div class="contenedor-iconos animacion">
+                <!--Fila 1 de iconos con texto de la seccion 5-->
+                <div class="fila-iconos">
+                    <!--Primer icono con texto de la primera fila de la seccion 5-->
+                    <div class="iconos">
+                        <!--Si desea cambiar el primer icono de la primera fila de la seccion 5 cambie el "src"-->
+                        <img class="icono" src="imgs/inicio/seccion5/icono1_1.jpg">
+                        <!--Si desea cambiar el primer titulo de la primera fila de la seccion 5 cambie el <h3>-->
+                        <h3>Precios medios</h3>
+                        <!--Si desea cambiar el primer texto de la primera fila de la seccion 5 cambie el <p>-->
+                        <p>Nos basamos en precios aesequibles para todos los tipos de persona</p>
+                    </div>
+                    <!--Termina el Primer icono con texto de la primera fila de la seccion 5-->
+                    <!--Segundo icono con texto de la primera fila de la seccion 5-->
+                    <div class="iconos">
+                        <!--Si desea cambiar el segundo icono de la primera fila de la seccion 5 cambie el "src"-->
+                        <img class="icono" src="imgs/inicio/seccion5/icono1_2.jpg">
+                        <!--Si desea cambiar el segundo titulo de la primera fila de la seccion 5 cambie el <h3>-->
+                        <h3>Posicionamiento Europeo</h3>
+                        <!--Si desea cambiar el segundo texto de la primera fila de la seccion 5 cambie el <p>-->
+                        <p>Nos puedes encontrar también en: Reino Unido, Alemania, Francia, Suecia, Italia....</p>
+                    </div>
+                    <!-- Finaliza el Segundo icono con texto de la primera fila de la seccion 5-->
+                    <!--Tercer icono con texto de la primera fila de la seccion 5-->
+                    <div class="iconos">
+                        <!--Si desea cambiar el tercer icono de la primera fila de la seccion 5 cambie el "src"-->
+                        <img class="icono" src="imgs/inicio/seccion5/icono1_3.jpg">
+                        <!--Si desea cambiar el tercer titulo de la primera fila de la seccion 5 cambie el <h3>-->
+                        <h3>Contaminacion 0</h3>
+                        <!--Si desea cambiar el segundo texto de la primera fila de la seccion 5 cambie el <p>-->
+                        <p>Nos centramos en el uso de energias renovable, estamos concienciados en el cambio climatico.
+                        </p>
+                    </div>
+                    <!--Finaliza el tercer icono con texto de la primera fila de la seccion 5-->
+                </div>
+                <!--Finaliza la primera fila de iconos con texto de la seccion 5-->
+                <div class="fila-iconos">
+                    <!--Primer icono con texto de la segunda fila de la seccion 5-->
+                    <div class="iconos">
+                        <!--Si desea cambiar el primer icono de la segunda fila de la seccion 5 cambie el "src"-->
+                        <img class="icono" src="imgs/inicio/seccion5/icono1_4.jpg">
+                        <!--Si desea cambiar el primer titulo de la segunda fila de la seccion 5 cambie el <h3>-->
+                        <h3>Esperzanza</h3>
+                        <!--Si desea cambiar el primer texto de la segunda fila de la seccion 5 cambie el <p>-->
+                        <p>Creemos en todos/as, todo el mundo merece una oportunidad y nuestro esfuerzo va dedicado a
+                            ellos.</p>
+                    </div>
+                    <!--Finaliza el Primer icono con texto de la segunda fila de la seccion 5-->
+                    <!--Segundo icono con texto de la segunda fila de la seccion 5-->
+                    <div class="iconos">
+                        <!--Si desea cambiar el segundo icono de la segunda fila de la seccion 5 cambie el "src"-->
+                        <img class="icono" src="imgs/inicio/seccion5/icono1_5.jpg">
+                        <!--Si desea cambiar el segundo titulo de la segunda fila de la seccion 5 cambie el <h3>-->
+                        <h3>Profesionalidad</h3>
+                        <!--Si desea cambiar el segundo texto de la segundaa fila de la seccion 5 cambie el <p>-->
+                        <p>Nuestros profesionales poseeen titulos/ galardones por la dedicacion y esfuerzo en su
+                            trabajo.</p>
+                    </div>
+                    <!--Finaliza el segundo icono con texto de la segunda fila de la seccion 5-->
+                </div>
+                <!--Finaliza la segunda fila de iconos con texto de la seccion 5-->
+            </div>
+            <!--Finaliza el contenedor de iconos con texto de la sección 5-->
+        </section>
+        <!--Finaliza la sección 5-->
+        <div class="separador"></div>
+    </main>
+    <!--Termina el cuerpo de la web de inicio-->
+    <!--Comienza el footer de la web-->
+    <footer class="footer">
+        <div class="contenedor-footer">
+            <!--Si desea cambiar el logo de la empresa solamente tendría que escribir la ruta pertinente en "SRC"-->
+            <img class="logo-footer" src="imgs/logos/logo.png">
+            <div class="foot-rrss-container">
+                <!--Si desea cambiar la imagen solamente tendría que escribir la ruta pertinente en "SRC"-->
+                <img class="linkedin-footer" src="imgs/footer/logo link.png">
+                <img class="facebook-footer" src="imgs/footer/facebook.png">
+                <img class="youtube-footer" src="imgs/footer/youtube.png">
+                <img class="tiktok-footer" src="imgs/footer/tiktok.png">
+                <img class="insta-footer" src="imgs/footer/instagram.png">
+            </div>
+
+            <div class="separador"></div>
+        </div>
+        <!--Finaliza el contenedor del footer-->
+    </footer>
+    <!--Finaliza el footer de la web-->
+    <script src="script.js"></script>
+</body>
+
+</html>

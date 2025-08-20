@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="imgs/logos/LogoNegroSinFondo.png" />
+    <title>CONTACT</title>
+
+    <!-- Bootstrap -->
+
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Estilos SOLO para el formulario de contacto -->
+
+</head>
+
+<body>
+    <!-- CABECERA -->
+    <header>
+        <nav class="contenedor-header">
+            <a href="index.html"><img class="logo logoNuevo" src="imgs/logos/logo.png" /></a>
+            <div class="menu">
+                <ul class="links">
+                    <a href="index.html">
+                        <p class="enlaces" style="color: rgb(1, 104, 194)">Inicio</p>
+                    </a>
+                    <a href="webForos.html">
+                        <pre
+                            style="color: rgb(1, 104, 194); font-size: 190%; font-family: Calibri, sans-serif;">Foros</pre>
+                    </a>
+                    <a href="webEventos.html">
+                        <p class="enlaces" style="color: rgb(1, 104, 194)">Eventos</p>
+                    </a>
+                    <a href="webTeam.html">
+                        <p class="enlaces" style="color: rgb(1, 104, 194)">Equipo</p>
+                    </a>
+                    <a href="webContact.html">
+                        <p class="enlaces" style="color: rgb(1, 104, 194)">Contacto</p>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+        <div class="separador"></div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        <div class="contenedor-texto2">
+            <div class="max-w-xl mx-auto bg-white shadow-lg rounded-xl p-8 mt-12">
+                <h2 class="text-2xl font-bold text-blue-600 text-center mb-6">Contact Form</h2>
+                <form>
+                    <div class="mb-4">
+                        <label for="input1" class="block text-blue-700 font-medium mb-1">Name</label>
+                        <input type="text" id="input1" name="name" placeholder="Tap to write"
+                            class="w-full border border-blue-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 transition">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="input2" class="block text-blue-700 font-medium mb-1">Age</label>
+                        <input type="text" id="input2" name="age" placeholder="Tap to write"
+                            class="w-full border border-blue-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 transition">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="input3" class="block text-blue-700 font-medium mb-1">Email</label>
+                        <input type="email" id="input3" name="email" placeholder="Tap to write"
+                            class="w-full border border-blue-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 transition">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="input4" class="block text-blue-700 font-medium mb-1">Subject</label>
+                        <input type="text" id="input4" name="subject" placeholder="Tap to write"
+                            class="w-full border border-blue-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 transition">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="matter" class="block text-blue-700 font-medium mb-1">Write down here your
+                            matter</label>
+                        <textarea id="matter" name="text" rows="4" placeholder="Tap to write"
+                            class="w-full border border-blue-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 transition"></textarea>
+                    </div>
+
+                    <input type="hidden" name="_autoresponse" value="your message has been sent">
+                    <input type="hidden" name="_captcha" value="true">
+
+                    <button type="submit"
+                        class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md transition duration-300">
+                        Enviar
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <!-- SEPARADOR -->
+    <div class="separador"></div>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+        <div class="contenedor-footer">
+            <img class="logo-footer" src="imgs/logos/logo.png" />
+            <div class="foot-rrss-container">
+                <img class="linkedin-footer" src="imgs/footer/logo link.png" />
+                <img class="facebook-footer" src="imgs/footer/facebook.png" />
+                <img class="youtube-footer" src="imgs/footer/youtube.png" />
+                <img class="tiktok-footer" src="imgs/footer/tiktok.png" />
+                <img class="insta-footer" src="imgs/footer/instagram.png" />
+            </div>
+            <div class="separador"></div>
+        </div>
+    </footer>
+
+    <!-- JS opcional -->
+    <script src="script.js"></script>
+</body>
+
+</html>

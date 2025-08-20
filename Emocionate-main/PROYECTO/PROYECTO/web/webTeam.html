@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Aquí se encuentra enlazada la hoja de estilos, si se le cambia el nombre o se cambia por otra
+    solamente habría que poner el nuevo nombre en href-->
+    <link rel="stylesheet" href="style.css">
+    <!--Aqui añadimos el icono a la página web-->
+    <link rel="icon" type="image/x-icon" href="imgs/logos/LogoNegroSinFondo.png">
+    <!--Si se quiere cambiar el nombre de la pagina que es lo que aparece escrito en la pestaña del navegador-->
+    <title>TEAM</title>
+</head>
+<!--Aqui tenemos el body que es donde se encuentra todo el codigo HTML-->
+
+<body>
+    <!--Esto es la cabecera, lo que aparece arriba del todo de la página-->
+    <header>
+        <!--Contenedor que alberga el header-->
+        <nav class="contenedor-header">
+            <!--Si desea cambiar el logo de la empresa solamente tendría que escribir la ruta pertinente en "SRC"-->
+            <a href="index.html"><img class="logo" src="imgs/logos/logo.png"></a>
+            <!--Aqui tenemos el menu de navegacion de la web, si desea añadir alguno o quitarlo, solo debe copiar uno,
+        pegarlo abajo de ese y cambiarle el nombre y añadirle la ruta a esa web-->
+            <div class="menu">
+                <ul class="links">
+                    <a href="index.html">
+                        <p class="enlaces" style="color: rgb(1, 104, 194);">Inicio</p>
+                    </a>
+                    <a href="webForos.html">
+                        <pre
+                            style="color: rgb(1, 104, 194); font-size: 190%; font-family: Calibri, sans-serif;">Foros</pre>
+                    </a>
+                    <a href="webEventos.html">
+                        <p class="enlaces" style="color: rgb(1, 104, 194);">Eventos</p>
+                    </a>
+                    <a href="webTeam.html">
+                        <p class="enlaces" style="color: rgb(1, 104, 194);">Equipo</p>
+                    </a>
+                    <a href="webContact.html">
+                        <p class="enlaces" style="color: rgb(1, 104, 194);">Contacto</p>
+                    </a>
+                </ul>
+            </div>
+            <!--Finaliza el menu de navegación de la web-->
+        </nav>
+        <div class="separador"></div>
+    </header>
+    <main>
+        <!--Seccion en la que se introduce este apartado de la web-->
+        <section class="contenedor-texto3">
+            <!--Si desea cambiar el titulo de la seccion solamente tendría que modificar este <h1>-->
+            <h1 class="titulo">NUESTRO EQUIPO</h1>
+            <!--Si desea cambiar el parrafo de la sección solamente tendría que modificar este <p>-->
+            <p class="texto">
+                Creemos en la importancia de un buen equipo. Para nosotros lo más importanate es la confianza entre
+                nosotros.
+                Por lo que agradecemos a los profesionales que colaboran con nosotros/este proyecto en la ayuda de loas
+                mas vulnerables y mas necesitados.
+            </p>
+        </section>
+        <!--Termina la seccion de introducción-->
+        <!--Separador-->
+        <div class="separador"></div>
+        <!--Seccion para el equipo de Delta Criv Solutions -->
+        <section>
+            <!--Contenedor para las imagenes del equipo-->
+            <div class="contenedor-equipo">
+                <!--Contenedor de  primera persona de equipo -->
+                <div class="Contenedor-persona">
+                    <!--Imagen de  primera persona de equipo-->
+                    <img class="img-equipo1" src="imgs/Team/iker.jpg">
+                    <!--Nombre de tercera persona de equipo-->
+                    <p>IKER MARTÍN BURUAGA</p>
+                </div>
+                <!--Contenedor de segunda persona de equipo -->
+                <div class="Contenedor-persona">
+                    <!--Imagen de  segunda persona de equipo-->
+                    <img class="img-equipo2" src="imgs/Team/ibra.jpg">
+                    <!--Nombre de tercera persona de equipo-->
+                    <p>IBRAHIM KIDI COLLADO</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <!--Termina el cuerpo de la web de inicio-->
+    <div class="separador"></div>
+    <!--Comienza el footer de la web-->
+    <footer class="footer">
+        <!--Contenedor que alberga el footer-->
+        <!--Comienza el contenedor del footer-->
+        <div class="contenedor-footer">
+            <!--Si desea cambiar el logo de la empresa solamente tendría que escribir la ruta pertinente en "SRC"-->
+            <img class="logo-footer" src="imgs/logos/logo.png">
+            <div class="foot-rrss-container">
+                <!--Si desea cambiar la imagen solamente tendría que escribir la ruta pertinente en "SRC"-->
+                <img class="linkedin-footer" src="imgs/footer/logo link.png">
+                <img class="facebook-footer" src="imgs/footer/facebook.png">
+                <img class="youtube-footer" src="imgs/footer/youtube.png">
+                <img class="tiktok-footer" src="imgs/footer/tiktok.png">
+                <img class="insta-footer" src="imgs/footer/instagram.png">
+            </div>
+
+            <div class="separador"></div>
+        </div>
+        <!--Finaliza el contenedor del footer-->
+    </footer>
+    <!--Finaliza el footer de la web-->
+    <script src="script.js"></script>
+</body>
+
+</html>

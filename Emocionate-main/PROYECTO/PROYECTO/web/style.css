@@ -1,0 +1,720 @@
+.column {
+    width: 100%;
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    body {
+        font-size: 75%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 60%;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .fila-historias {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .historia {
+        padding-right: 5%;
+        padding-left: 15%;
+    }
+
+    .contenedor-imagen {
+        width: 90%;
+    }
+
+
+}
+
+@media (max-width: 426px) {
+    body {
+        font-size: 50%;
+    }
+
+}
+
+@media (max-width: 376px) {
+    body {
+        font-size: 42%;
+    }
+
+}
+
+@media (max-width: 321px) {
+    body {
+        font-size: 39%;
+    }
+}
+
+
+
+
+/*Clase para la animacion de aparicion del texto*/
+.animacion {
+    opacity: 0;
+    transition: all 0.7s
+}
+
+
+/*Regla que afecta a todo el cuerpo*/
+body {
+    width: 100%;
+    height: auto;
+    font-family: "Calibri", sans-serif;
+}
+
+/*clase para el html*/
+html {
+    width: 100%;
+}
+
+/*Regla para los headers*/
+header {
+    width: 100%;
+    height: fit-content;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*Clase para todos los headers*/
+.contenedor-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+/*Clase que afecta al logo que aparece en los headers */
+.logo {
+    width: 45%;
+    padding-left: 10%;
+    padding-top: 4%;
+}
+
+.logoNuevo {
+    width: 58% !important;
+    padding-top: 5% !important;
+    padding-left: 13% !important;
+}
+
+/*Clase para el contenedor del menu de los headers*/
+.menu {
+    width: fit-content;
+    padding-right: 20%;
+    padding-top: 5%;
+}
+
+/*Clase para el contenedor de los links de los headers*/
+.links {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+/*Clase para los enlaces de los headers*/
+.links a {
+    text-decoration: none;
+}
+
+/*Clase para el hover de los enlaces de los headers*/
+.links a :hover {
+    border-bottom: 2px solid #0173a9
+}
+
+/*Clase para el texto de los enlaces de los headers*/
+.enlaces {
+    font-size: 190%;
+    color: aliceblue;
+}
+
+
+/*clase para un separador de secciones*/
+.separador {
+    height: 67px;
+}
+
+/*Clase para primer tipo de texto (Todo en blanco)*/
+.contenedor-texto {
+    color: aliceblue;
+    padding-left: 13%;
+    padding-right: 20%;
+}
+
+/*Clase para segundo tipo de texto (Todo en negro)*/
+.contenedor-texto2 {
+    color: black;
+    padding-left: 13%;
+    padding-right: 20%;
+    margin-top: 100px;
+}
+
+/*Clase para tercer tipo de texto*/
+.contenedor-texto3 {
+    color: black;
+    padding-left: 13%;
+    padding-right: 20%;
+}
+
+/*Clase para tercer tipo de texto*/
+.contenedor-texto3 h1 {
+    color: rgb(1, 104, 194);
+    margin: 0%;
+    font-size: 500%;
+}
+
+/*Clase para segundo tipo de texto (para las noticias)*/
+.contenedor-texto4 {
+    color: black;
+    padding-left: 13%;
+    padding-right: 20%;
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+}
+
+/*Clase para cuarto tipo de texto*/
+.contenedor-texto4 p {
+    color: rgb(114, 112, 112);
+}
+
+/*Clase para tercer tipo titulo*/
+.contenedor-texto4 h2 {
+    color: rgb(1, 104, 194);
+}
+
+/*Clase para titulos de la web*/
+.titulo {
+    margin: 0%;
+    font-size: 500%;
+}
+
+/*Clase para subtitulos de la web*/
+.subtitulo {
+    margin: 0%;
+    font-size: 250%;
+}
+
+/*Clase para textos de la web*/
+.texto {
+    font-size: 210%;
+}
+
+/*Clase para el contenedor de imagenes del inicio*/
+.contenedor-imagenes-inicio {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+/*Clase para el segundo contenedor de imagenes del inicio*/
+.contenedor-seccion4 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+/*Clase para la imagen y texto superpuestos del segundo contenedor del inicio*/
+.contenedor-imagenes-inicio2 {
+    width: 50%;
+}
+
+/*ID para la posicion relativa de las imagenes del inicio*/
+#div-posicion-relativa {
+    position: relative;
+}
+
+/*ID para la posicion absoluta de el texto del inicio*/
+#div-posicion-absoluta {
+    display: none;
+    position: absolute;
+    bottom: 0.8%;
+    color: #fff;
+    background-color: black;
+    opacity: 0.7;
+    width: 100%;
+    height: 99.2%
+}
+
+/*ID para el hover de la posicion relativa de el texto del inicio*/
+#div-posicion-relativa:hover div {
+    display: block;
+    opacity: 100%;
+}
+
+/*ID para el texto que está en posicion absoluta aobre la imagen*/
+#div-posicion-absoluta p {
+    padding: 5%;
+    font-size: 190%;
+}
+
+/*ID para la primera imagen*/
+#imagen1_1 {
+    height: 100%;
+    width: 100%;
+}
+
+/*ID para la segunda imagen*/
+#imagen1_2 {
+    height: 100%;
+    width: 100%;
+}
+
+/*ID para la tercera imagen*/
+#imagen2_1 {
+    height: 100%;
+    width: 100%;
+}
+
+/*ID para la cuarta imagen*/
+#imagen2_2 {
+    height: 100%;
+    width: 100%;
+}
+
+/*Clase para contenedor de la seccion 3*/
+.contenedor-seccion3 {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*Clase para el contenedor de las filas de la seccion 3*/
+.contenedor-columnas-texto-seccion3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Clase para las filas de la seccion 3*/
+.fila-columnas-texto-seccion3 {
+    display: flex;
+    flex-direction: row;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+/*Clase para el contenedor de texto de las columnas*/
+.contenedor-texto-columnas {
+    padding-left: 3%;
+    padding-right: 3%;
+    text-align: center;
+    color: aliceblue;
+}
+
+/*clase para el titulo de las columnas*/
+.titulo-columnas {
+    font-size: 190%;
+}
+
+/*clase para el texto de las columnas*/
+.texto-columnas {
+    font-size: 160%;
+}
+
+/*Clase para el contenedor de iconos*/
+.contenedor-iconos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 5%;
+}
+
+/*Clase para la fila de iconos*/
+.fila-iconos {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/*Clase para el contenedor de el texto e icono*/
+.iconos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/*Clase para el icono*/
+.icono {
+    width: 45%;
+    margin: 2%;
+    padding-top: 3%;
+}
+
+/*Clase para el subtitulo del icono*/
+.iconos h3 {
+    font-size: 170%;
+    margin: 1%;
+}
+
+/*Clase para el texto del icono*/
+.iconos p {
+    font-size: 140%;
+    margin: 0%;
+}
+
+/*Clase para contenedor de historias*/
+.contenedor-foros {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Clase para Filas donde se encuentran las historias*/
+.fila-foros {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+    gap: 4%;
+}
+
+.fila-foros a {
+    width: 40%;
+}
+
+/*Clase para enlace de cada historia*/
+.fila-foros a {
+    text-decoration: none;
+}
+
+/*Clase para titulo de historia*/
+.titulo-foro {
+    font-size: 200%;
+    color: rgb(1, 92, 173);
+    margin: 1%;
+}
+
+/*Clase para texto de historia*/
+.texto-foro {
+    font-size: 150%;
+    color: black;
+    margin: 1%;
+}
+
+/*Clases para la imagen de la historia y su animación*/
+.contenedor-imagen img {
+    width: 90%;
+    transition: 0.5s;
+}
+
+.contenedor-imagen {
+    overflow: hidden;
+}
+
+.fila-foros img:hover {
+    transform: scale(1.2);
+    color: black
+}
+
+/*Clase para la imagen de las historias*/
+.imagen-historia {
+    width: 90%;
+    height: auto;
+    margin-top: 2%;
+
+}
+
+/*Clase para el texto de las historias individuales*/
+.texto-historia2 {
+    font-size: 150%;
+    color: black;
+    margin-top: 3%;
+}
+
+/* CONTENEDOR DEL CHAT */
+.chat-container {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    background-color: #e6f0fa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+    display: flex;
+    flex-direction: row;
+    height: 450px;
+    overflow: hidden;
+}
+
+/* ÁREA DONDE APARECEN LOS MENSAJES */
+.chat-box {
+    flex: 1;
+    min-height: 300px;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: #e6f0fa;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px 10px 0 0;
+    gap: 10px;
+}
+
+/* ÁREA DE ENTRADA */
+.chat-input-area {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #b3d7f5;
+    background-color: #d6eaff;
+    gap: 5px;
+    border-radius: 0 0 10px 10px;
+}
+
+/* NOMBRE DE USUARIO */
+.mensaje-burbuja-usuario {
+    font-weight: bold;
+    color: #004080;
+    font-size: 14px;
+}
+
+/* TEXTO DEL MENSAJE */
+.mensaje-burbuja-texto {
+    font-size: 14px;
+    color: #003366;
+}
+
+/* HORA DEL MENSAJE */
+.mensaje-burbuja-hora {
+    text-align: right;
+    font-size: 12px;
+    color: #555;
+}
+
+/* MENSAJE BURBUJA */
+
+.mensaje-burbuja {
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: #cce5ff;
+    /* Fondo azul claro */
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* INPUT DE NOMBRE */
+.input-nombre {
+    width: 25%;
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid #a3cfff;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* INPUT DE MENSAJE */
+.input-mensaje {
+    flex: 1;
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid #a3cfff;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* BOTÓN DE ENVIAR */
+.boton-enviar {
+    height: 40px;
+    /*padding: 0 16px;*/
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    line-height: 40px;
+    box-sizing: border-box;
+}
+
+.boton-enviar:hover {
+    background-color: #0056b3;
+}
+
+/* FIN CHATS */
+
+/*Clase para el contenedor de imagenes y nombres del equipo*/
+.contenedor-equipo {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 20%;
+    position: relative;
+}
+
+/*Clase para contenedor de nombre e imagen de persona del equipo*/
+.contenedor-persona {
+    overflow: hidden;
+}
+
+/*Clase para imagenes de el equipo*/
+.img-equipo1 {
+    width: 25%;
+    transition: all .5s;
+}
+
+/*Clase para imagenes de el equipo*/
+.img-equipo2 {
+    width: 55%;
+    transition: all .5s;
+}
+
+/*Clase para movimiento de imagen de equipo*/
+.img-equipo:hover {
+    transform: scale(1.09);
+}
+
+/*Clase para el div de poicion absoluta que aparece sobre imagen del equipo*/
+.contenedor-equipo #infoEquipo {
+    display: none;
+    width: 25.3%;
+    height: 80%;
+    background-color: black;
+    top: -0%;
+    color: aliceblue;
+    position: absolute;
+    box-sizing: border-box;
+    margin-left: 4%;
+
+
+}
+
+/*Clase para imagen de las noticias*/
+.img-noticia {
+    width: 40%;
+    height: 40%;
+}
+
+.enlacenoticia {
+    text-decoration: none;
+}
+
+.enlacenoticia h3 {
+    color: black;
+}
+
+/*clase para formulario*/
+
+
+/*Clase para el texto del formulario de contacto*/
+.texto-formulario {
+    font-size: 170%;
+    color: black;
+    margin-right: 3%;
+}
+
+/*Clase para los recuadros de introducir texto para nombre, apellido y corro*/
+
+
+#input1 {
+    margin-left: 3.9%;
+}
+
+#input3 {
+    margin-left: 4.5%;
+}
+
+#input4 {
+    margin-left: 2.4%;
+}
+
+/*Clase para el recuadro en el que introducen el asunto  del correo*/
+.matter {
+    width: 80%;
+    height: 150px;
+}
+
+/*Clase para el footer de la web*/
+.footer {
+    background-color: rgb(242, 240, 240);
+    width: 100%;
+    text-align: center;
+}
+
+/*Clase para el contenedor del footer*/
+.contenedor-footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/*Clase para el texto del footer*/
+.contenedor-footer p {
+    padding-top: 1%;
+    font-size: 150%;
+    margin: 0%;
+}
+
+.contenedor-footer a {
+    padding-top: 1%;
+    font-size: 140%;
+    margin: 0%;
+    text-decoration: none;
+    color: black;
+}
+
+.foot-rrss-container {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    gap: 10%;
+    margin-left: 40%;
+    margin-right: 38%;
+    padding-top: 2.5%;
+}
+
+/*Clase para logo del footer*/
+.logo-footer {
+    padding-top: 3%;
+    width: 13%;
+}
+
+/*Clase para logo de linkedin del footer*/
+.linkedin-footer {
+    width: 10%;
+}
+
+.insta-footer {
+    width: 10%;
+}
+
+.facebook-footer {
+    width: 8%;
+}
+
+.tiktok-footer {
+    width: 8%;
+}
+
+.youtube-footer {
+    padding-top: 3%;
+    height: 10%;
+    width: 10%;
+}
