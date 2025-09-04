@@ -15,14 +15,31 @@
 
 <body>
   <header>
-    <h1>IP Address Tracker</h1>
-
+    <h1 class="title1">IP Address Tracker</h1>
+    <form action="">
+      <div class="sendContainer">
+        <input type="text" name="initialIP" id="InitialIP" placeholder="Search for any IP address or domain">
+        <input type="button" class="button">
+      </div>
+    </form>
   </header>
+  <main id="map">
+    <div class="infoContainer">
+
+    </div>
+  </main>
 
 
+  <script src="script.js">
+
+  </script>
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLbspBehYRjcb-vDuW7S2cgKWhLCnA4z4&loading=async&libraries=places&callback=initMap"
+    defer>
+    </script>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Ibrahim Kidi Collado</a>.
   </div>
 
 </body>
