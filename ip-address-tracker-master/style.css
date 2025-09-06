@@ -66,6 +66,12 @@ header {
 	background-repeat: no-repeat;
 	background-position: center;
 	height: 50px;
+
+}
+
+.button:hover {
+	background-color: #333333;
+	transition: 0.1s;
 }
 
 
@@ -151,6 +157,24 @@ header {
 		justify-content: space-between;
 		padding: 30px 80px 30px 30px;
 		column-gap: 50px;
+	}
+
+	.miniLetter {
+		font-size: 13px;
+		padding-bottom: 18px;
+	}
+
+	.bigLetter {
+		font-size: 24px;
+	}
+
+	.infoItems {
+		width: 200px;
+	}
+
+	.infoItems:not(:first-child) {
+		border-left: solid grey 0.1px;
+		padding-left: 40px;
 	}
 }
 
