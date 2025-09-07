@@ -11,6 +11,8 @@
 
   <title>Frontend Mentor | IP Address Tracker</title>
 
+  <!-- Cargar primero tu script -->
+  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -19,7 +21,7 @@
     <form action="">
       <div class="sendContainer">
         <input type="text" name="initialIP" id="InitialIP" placeholder="Search for any IP address or domain">
-        <input type="button" class="button">
+        <input type="button" class="button" onclick="recogeIp()">
       </div>
     </form>
   </header>
@@ -28,31 +30,44 @@
     <div class="infoContainer">
       <div class="infoItems">
         <p class="miniLetter">IP ADDRESS</p>
-        <p class="bigLetter">192.212.174.101</p>
+        <p class="bigLetter" id="id">192.212.174.101</p>
       </div>
       <div class="infoItems">
         <p class="miniLetter">LOCATION</p>
-        <p class="bigLetter">Brooklyn, NY 10001</p>
+        <!-- CORRECCIÓN: Cambiado "lcoation" a "location" -->
+        <p class="bigLetter" id="location">Brooklyn, NY 10001</p>
       </div>
       <div class="infoItems">
         <p class="miniLetter">TIMEZONE</p>
-        <p class="bigLetter">UTC -05:00</p>
+        <p class="bigLetter" id="timezone">UTC -05:00</p>
       </div>
       <div class="infoItems">
         <p class="miniLetter">ISP</p>
-        <p class="bigLetter">SpaceX Starlink</p>
+        <p class="bigLetter" id="isp">SpaceX Starlink</p>
       </div>
     </div>
   </main>
 
+  <!-- Script de Google Maps -->
+  <script>
+    // Función initMap básica para el callback
+    function initMap() {
+      console.log("Google Maps API loaded");
+      // Inicializar un mapa básico o esperar a que recogeIp() lo actualice
+      const map = new google.maps.Map(document.getElementById("map"), {
+        center: { lat: 40.6892, lng: -74.0445 }, // Coordenadas por defecto
+        zoom: 10
+      });
 
-  <script src="script.js">
-
+      // Hacer la variable map global para poder acceder desde otras funciones
+      window.map = map;
+    }
   </script>
-  <script async
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLbspBehYRjcb-vDuW7S2cgKWhLCnA4z4&loading=async&libraries=places&callback=initMap"
-    defer>
+
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLbspBehYRjcb-vDuW7S2cgKWhLCnA4z4&loading=async&libraries=places&callback=initMap">
     </script>
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Ibrahim Kidi Collado</a>.
